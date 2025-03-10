@@ -35,7 +35,7 @@ class GameState extends ChangeNotifier {
   }
 
   void _initializeGame() {
-    List<String> icons = ['🍎', '🍌', '🍒', '🍇', '🍓', '🍉', '🍍', '🥭'];
+    List<String> icons = ['🚗', '🚲', '💻', '📕', '🍓', '🥥', '🇺🇸', '🍔'];
     icons = [...icons, ...icons];
     icons.shuffle(Random());
     _cards = List.generate(icons.length, (index) => CardModel(icons[index]));
